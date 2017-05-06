@@ -1,0 +1,28 @@
+.words-detailview {
+  margin-top: 30px;
+  border: 1px solid;
+  bakground-color: #FFF;
+}
+
+form {
+  padding: 50px;
+  width: 100%;
+}
+
+.form-group {
+  padding-top: 10px;
+}
+
+.no-label {
+  padding-top: 25px;
+  display: block;
+}
+
+.form-group.ng-touched.ng-invalid {
+  border: 1px solid #F00;
+}
+
+.btn-success {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

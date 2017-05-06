@@ -1,0 +1,49 @@
+<div class="words-detailview col-md-12">
+  <form (ngSubmit)="onSubmit(wordForm.form)" #wordForm="ngForm">
+    <div class="form-group">
+      <label for="english">English:</label>
+      <input id="english"
+             [(ngModel)]="model.english" name="english"
+             #english="ngModel"
+             type="text"
+             class="form-control"
+             required />
+      <div class="alert alert-danger" *ngIf="english.touched && !english.valid">
+        Field is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="german">German:</label>
+      <input id="german"
+             [(ngModel)]="model.german" name="german"
+             #german="ngModel"
+             type="text"
+             class="form-control"
+             required />
+      <div class="alert alert-danger" *ngIf="german.touched && !german.valid">
+        Field is required
+      </div>
+    </div>
+
+    <div class="form-group no-label">
+      <label for="type">Type:</label>
+      <div ngbDropdown class="d-inline-block">
+         <input id="type"
+                [(ngModel)]="model.type" name="type"
+                #type="ngModel"
+                type="text"
+                class="form-control"
+                required
+                ngbDropdownToggle />
+         <div class="dropdown-menu" aria-labelledby="dropdown">
+           <button class="dropdown-item" type="button" (click)="onDropdownClick(0)">{{ dropdownValue[0] }}</button>
+           <button class="dropdown-item" type="button" (click)="onDropdownClick(1)">{{ dropdownValue[1] }}</button>
+           <button class="dropdown-item" type="button" (click)="onDropdownClick(2)">{{ dropdownValue[2] }}</button>
+         </div>
+       </div>
+    </div>
+    
+    <button type="submit" class="btn btn-success pull-right">Submit</button>
+  </form>
+</div>

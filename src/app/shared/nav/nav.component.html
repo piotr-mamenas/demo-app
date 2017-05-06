@@ -1,0 +1,16 @@
+<div class="row wrapper">
+  <div [(ngModel)]="tabSelected" class="col-md-12" ngbRadioGroup>
+    <label class="btn btn-primary" [routerLink]="routingOptions[0]">
+      <input type="radio" [value]="0" /> {{ routingOptions[0] }}
+    </label>
+    <label class="btn btn-primary" [routerLink]="routingOptions[1]">
+      <input type="radio" [value]="1" /> {{ routingOptions[1] }}
+    </label>
+    <label class="btn btn-primary" [routerLink]="routingOptions[2]">
+      <input type="radio" [value]="2" /> {{ routingOptions[2] }}
+    </label>
+    <label class="btn btn-primary" [routerLink]="routingOptions[3]">
+      <input type="radio" [value]="3" /> {{ routingOptions[3] }}
+    </label>
+  </div>
+</div>

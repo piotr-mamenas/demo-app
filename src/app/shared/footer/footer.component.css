@@ -1,0 +1,11 @@
+.footer {
+  border: 1px solid;
+  width: 100%;
+  margin-top: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e72510), color-stop(6%, #D9230F), color-stop(6%, #cb210e));
+  color: #FFF;
+}
+
+p {
+  padding: 10px;
+}
