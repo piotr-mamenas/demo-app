@@ -1,6 +1,14 @@
-{
-  "Id":"1",
-  "English":"Hello",
-  "German":"Gruezi",
-  "Type":"Noun"
-}
+[
+  {
+    "Id":1,
+    "English":"Hello",
+    "German":"Gruezi",
+    "Type":"Noun"
+  },
+  {
+    "Id":2,
+    "English":"Going",
+    "German":"Gehen",
+    "Type":"Verb"
+  }
+]

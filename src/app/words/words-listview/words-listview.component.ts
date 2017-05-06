@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Word } from '../../model/Word';
 
 @Component({
@@ -6,13 +6,14 @@ import { Word } from '../../model/Word';
   templateUrl: './words-listview.component.html',
   styleUrls: ['./words-listview.component.css']
 })
-export class WordsListViewComponent {
+export class WordsListViewComponent implements OnInit {
   rows = [];
+
   columns = [
     { prop: 'Id' },
-    { name: 'English' },
-    { name: 'German' },
-    { name: 'Type' }
+    { prop: 'English' },
+    { prop: 'German' },
+    { prop: 'Type' }
   ];
 
   dropdownValue = [
@@ -20,7 +21,7 @@ export class WordsListViewComponent {
     'Noun',
     'Adjective'];
 
-  constructor() {
+  ngOnInit() {
     this.fetch((data) => {
       this.rows = data;
     });
