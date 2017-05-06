@@ -28,11 +28,11 @@
 
     <div class="form-group no-label">
       <label for="type">Type:</label>
-      <div ngbDropdown class="d-inline-block">
+      <div ngbDropdown class="dropdown btn btn-default">
          <input id="type"
                 [(ngModel)]="model.type" name="type"
                 #type="ngModel"
-                type="text"
+                type="button"
                 class="form-control"
                 required
                 ngbDropdownToggle />
@@ -43,7 +43,7 @@
          </div>
        </div>
     </div>
-    
+
     <button type="submit" class="btn btn-success pull-right">Submit</button>
   </form>
 </div>

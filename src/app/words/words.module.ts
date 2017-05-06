@@ -6,26 +6,27 @@ import { HttpModule } from '@angular/http';
 
 // Vendor Libraries
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-// Internal Dependencies
-//import { SharedModule } from '../shared/shared.module';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 // Module Components
 import { WordsDetailViewComponent } from './words-detailview/words-detailview.component';
+import { WordsListViewComponent } from './words-listview/words-listview.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    //SharedModule,
+    NgxDatatableModule,
     NgbModule.forRoot(),
   ],
   declarations: [
     WordsDetailViewComponent,
+    WordsListViewComponent
   ],
   exports: [
     WordsDetailViewComponent,
+    WordsListViewComponent
   ]
 })
 
