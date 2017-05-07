@@ -1,5 +1,5 @@
 <div class="row wrapper">
-  <div [(ngModel)]="tabSelected" class="col-md-12" ngbRadioGroup>
+  <div [(ngModel)]="tabSelected" class="col-md-6" ngbRadioGroup>
     <label class="btn btn-primary" [routerLink]="routingOptions[0]">
       <input type="radio" [value]="0" /> {{ routingOptions[0] }}
     </label>
@@ -13,4 +13,13 @@
       <input type="radio" [value]="3" /> {{ routingOptions[3] }}
     </label>
   </div>
+  <form class="form-inline col-md-6">
+    <label class="sr-only" for="searchButton">Search</label>
+    <div clas="input-group">
+      <input class="form-control" placeholder="Search" />
+      <button id="searchButton" type="button" class="input-group-addon btn btn-primary">
+        <span class="fa fa-search"></span>
+      </button>
+    </div>
+  </form>
 </div>

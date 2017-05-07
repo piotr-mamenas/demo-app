@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'left-panel',
@@ -7,4 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class LeftPanelComponent {
   @Input() loadView;
+  @Output() onSubmitLeftPanel = new EventEmitter();
+
+  onSubmit($event){
+    this.onSubmitLeftPanel.emit($event);
+  }
 }

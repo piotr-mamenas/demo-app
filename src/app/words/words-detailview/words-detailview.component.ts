@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Word } from '../../model/Word';
 
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
@@ -10,6 +10,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class WordsDetailViewComponent {
   wordForm : FormGroup;
+  @Output() onSubmitDetailView = new EventEmitter();
+  model : Word = new Word(0,'','','');
 
   constructor(private fb: FormBuilder){
     this.createForm();
@@ -29,5 +31,10 @@ export class WordsDetailViewComponent {
     'Adjective'];
 
   onSubmit(form){
+    this.model.id = 0;
+    this.model.english = form.value.english;
+    this.model.german = form.value.german;
+    this.model.type = form.value.type;
+    this.onSubmitDetailView.emit(this.model);
   }
 }
