@@ -20,19 +20,9 @@
 
     <div class="form-group no-label">
       <label for="type">Type:</label>
-      <div ngbDropdown class="dropdown btn btn-default">
-         <input id="type"
-                formControlName="type"
-                type="button"
-                class="form-control"
-                required
-                ngbDropdownToggle />
-         <div class="dropdown-menu" aria-labelledby="dropdown">
-           <button class="dropdown-item" type="button" (click)="onDropdownClick(0)">{{ dropdownValue[0] }}</button>
-           <button class="dropdown-item" type="button" (click)="onDropdownClick(1)">{{ dropdownValue[1] }}</button>
-           <button class="dropdown-item" type="button" (click)="onDropdownClick(2)">{{ dropdownValue[2] }}</button>
-         </div>
-       </div>
+      <select id="type" class="form-control" formControlName="type">
+        <option *ngFor="let type of types" [value]="type">{{ type }}</option>
+      </select>
     </div>
 
     <button type="submit" class="btn btn-success pull-right">Submit</button>

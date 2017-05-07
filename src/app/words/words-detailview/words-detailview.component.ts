@@ -23,17 +23,11 @@ export class WordsDetailViewComponent {
     });
   }
 
-  dropdownValue = [
+  types = [
     'Verb',
     'Noun',
     'Adjective'];
 
   onSubmit(form){
-  }
-
-  onDropdownClick(selectedValue){
-    //this.wordForm. = this.dropdownValue[selectedValue];
-    console.log(this.wordForm);
-    this.wordForm.value.type = this.dropdownValue[selectedValue];
   }
 }
