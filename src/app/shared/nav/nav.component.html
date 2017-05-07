@@ -13,13 +13,15 @@
       <input type="radio" [value]="3" /> {{ routingOptions[3] }}
     </label>
   </div>
-  <form class="form-inline col-md-6">
-    <label class="sr-only" for="searchButton">Search</label>
-    <div clas="input-group">
-      <input class="form-control" placeholder="Search" />
-      <button id="searchButton" type="button" class="input-group-addon btn btn-primary">
-        <span class="fa fa-search"></span>
-      </button>
-    </div>
-  </form>
+  <div class="col-md-6">
+    <form class="form-inline pull-right">
+      <label class="sr-only" for="searchButton">Search</label>
+      <div class="form-group">
+        <input class="form-control" placeholder="Search" />
+        <button id="searchButton" type="button" class="input-group-addon btn btn-primary">
+          <span class="fa fa-search"></span>
+        </button>
+      </div>
+    </form>
+  </div>
 </div>

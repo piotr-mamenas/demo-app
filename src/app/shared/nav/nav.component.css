@@ -1,8 +1,10 @@
 .row {
-  margin-top: 0px;
+  margin-top: 15px;
   margin-left: 6px;
+  height: 40px;
 }
 
-.searchbox {
-  margin-right: 20px;
+#searchButton {
+  width: 35px;
+  margin-right: 15px;
 }
