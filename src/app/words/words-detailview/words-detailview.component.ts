@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Word } from '../../model/Word';
+import { WordValidators } from '../../validators/WordValidators';
 
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
@@ -19,8 +20,10 @@ export class WordsDetailViewComponent {
 
   createForm() {
     this.wordForm = this.fb.group({
-      english: ['', Validators.required],
-      german: ['', Validators.required],
+      english: ['', Validators.compose([Validators.required,
+                                        WordValidators.cannotContainSpace])],
+      german: ['', Validators.compose([Validators.required,
+                                       WordValidators.cannotContainSpace])],
       type: ['', Validators.required]
     });
   }

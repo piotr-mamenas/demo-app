@@ -1,8 +1,8 @@
 [
   {
     "Id":1,
-    "English":"Hello",
-    "German":"Gruezi",
+    "English":"Change",
+    "German":"Vereanderung",
     "Type":"Noun"
   },
   {
@@ -13,38 +13,62 @@
   },
   {
     "Id":3,
-    "English":"Going",
-    "German":"Gehen",
-    "Type":"Verb"
+    "English":"Fear",
+    "German":"Angst",
+    "Type":"Noun"
   },
   {
     "Id":4,
-    "English":"Going",
-    "German":"Gehen",
-    "Type":"Verb"
+    "English":"Full",
+    "German":"Voll",
+    "Type":"Adjective"
   },
   {
     "Id":5,
-    "English":"Going",
-    "German":"Gehen",
+    "English":"Communicate",
+    "German":"Kommunizieren",
     "Type":"Verb"
   },
   {
     "Id":6,
-    "English":"Going",
-    "German":"Gehen",
-    "Type":"Verb"
+    "English":"Seat",
+    "German":"Sitz",
+    "Type":"Noun"
   },
   {
     "Id":7,
-    "English":"Going",
-    "German":"Gehen",
-    "Type":"Verb"
+    "English":"Subtraction",
+    "German":"Subtraktion",
+    "Type":"Noun"
   },
   {
     "Id":8,
-    "English":"Going",
-    "German":"Gehen",
+    "English":"Real",
+    "German":"Echt",
+    "Type":"Adjective"
+  },
+  {
+    "Id":9,
+    "English":"Translate",
+    "German":"Ubersetzen",
     "Type":"Verb"
+  },
+  {
+    "Id":10,
+    "English":"Continue",
+    "German":"Forsetzen",
+    "Type":"Verb"
+  },
+  {
+    "Id":11,
+    "English":"Meanwhile",
+    "German":"Dabei",
+    "Type":"Adjective"
+  },
+  {
+    "Id":12,
+    "English":"Future",
+    "German":"Zukunft",
+    "Type":"Adjective"
   }
 ]

@@ -1,5 +1,5 @@
 <div class="words-detailview col-md-12">
-  <form (ngSubmit)="onSubmit(wordForm)" [formGroup]="wordForm" novalidate>
+  <form (ngSubmit)="onSubmit(wordForm)" [formGroup]="wordForm" novalidate class="material fullscreen">
     <div class="form-group">
       <label for="english">English:</label>
       <input id="english"
@@ -7,6 +7,16 @@
              type="text"
              class="form-control"
              required />
+    </div>
+    <div *ngIf="wordForm.controls.english.touched">
+      <div *ngIf="!wordForm.controls.english.valid"
+         class="alert alert-danger">English translation is required
+      </div>
+      <!--
+       <div *ngIf="!wordForm.controls.english.errors.cannotContainSpace"
+         class="alert alert-danger">Word cannot contain spaces
+      </div>
+      -->
     </div>
 
     <div class="form-group">
@@ -17,12 +27,22 @@
              class="form-control"
              required />
     </div>
+    <div *ngIf="wordForm.controls.german.touched">
+      <div *ngIf="!wordForm.controls.german.valid"
+         class="alert alert-danger">German translation is required
+      </div>
+    </div>
 
     <div class="form-group no-label">
       <label for="type">Type:</label>
       <select id="type" class="form-control" formControlName="type">
         <option *ngFor="let type of types" [value]="type">{{ type }}</option>
       </select>
+    </div>
+    <div *ngIf="wordForm.controls.type.touched">
+      <div *ngIf="!wordForm.controls.type.valid"
+         class="alert alert-danger">Type is required
+      </div>
     </div>
 
     <button type="submit" class="btn btn-success pull-right">Submit</button>

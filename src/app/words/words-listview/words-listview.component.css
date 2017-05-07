@@ -1,7 +1,7 @@
 .words-listview {
   margin-top: 30px;
-  border: 1px solid;
   bakground-color: #FFF;
+  height: 100%;
 }
 
 ngx-datatable {

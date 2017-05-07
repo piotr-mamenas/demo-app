@@ -1,16 +1,17 @@
 .words-detailview {
   margin-top: 30px;
-  border: 1px solid;
   bakground-color: #FFF;
+  height: 100%;
 }
 
 form {
   padding: 50px;
   width: 100%;
-}
-
-.form-group {
-  padding-top: 10px;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
 }
 
 .no-label {
@@ -25,8 +26,4 @@ form {
 .btn-success {
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-.dropdown {
-  width: 150px;
 }
