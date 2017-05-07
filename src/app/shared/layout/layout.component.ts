@@ -11,8 +11,6 @@ export class LayoutComponent {
 
   // LEFT PANEL METHODS
   onSubmitLeftPanel($event){
-    console.log("layout");
-    console.log($event);
   }
 
   // RIGHT PANEL METHODS
