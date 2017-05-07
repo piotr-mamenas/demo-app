@@ -3,3 +3,7 @@
   border: 1px solid;
   bakground-color: #FFF;
 }
+
+ngx-datatable {
+  height: 100%;
+}

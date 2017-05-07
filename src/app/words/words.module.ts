@@ -1,7 +1,7 @@
 // Angular Libraries
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 // Vendor Libraries
@@ -18,6 +18,7 @@ import { WordsListViewComponent } from './words-listview/words-listview.componen
     FormsModule,
     HttpModule,
     NgxDatatableModule,
+    ReactiveFormsModule,
     NgbModule.forRoot(),
   ],
   declarations: [

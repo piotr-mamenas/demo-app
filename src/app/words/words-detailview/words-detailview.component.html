@@ -1,37 +1,28 @@
 <div class="words-detailview col-md-12">
-  <form (ngSubmit)="onSubmit(wordForm.form)" #wordForm="ngForm">
+  <form (ngSubmit)="onSubmit(wordForm.form)" [formGroup]="wordForm" novalidate>
     <div class="form-group">
       <label for="english">English:</label>
       <input id="english"
-             [(ngModel)]="model.english" name="english"
-             #english="ngModel"
+             formControlName="english"
              type="text"
              class="form-control"
              required />
-      <div class="alert alert-danger" *ngIf="english.touched && !english.valid">
-        Field is required
-      </div>
     </div>
 
     <div class="form-group">
       <label for="german">German:</label>
       <input id="german"
-             [(ngModel)]="model.german" name="german"
-             #german="ngModel"
+             formControlName="german"
              type="text"
              class="form-control"
              required />
-      <div class="alert alert-danger" *ngIf="german.touched && !german.valid">
-        Field is required
-      </div>
     </div>
 
     <div class="form-group no-label">
       <label for="type">Type:</label>
       <div ngbDropdown class="dropdown btn btn-default">
          <input id="type"
-                [(ngModel)]="model.type" name="type"
-                #type="ngModel"
+                formControlName="type"
                 type="button"
                 class="form-control"
                 required

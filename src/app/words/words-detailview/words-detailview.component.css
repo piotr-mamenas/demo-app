@@ -18,7 +18,7 @@ form {
   display: block;
 }
 
-.form-group.ng-touched.ng-invalid {
+.ng-touched.ng-invalid {
   border: 1px solid #F00;
 }
 
