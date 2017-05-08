@@ -13,6 +13,9 @@ import { LayoutComponent } from './layout/layout.component';
 
 // Internal Dependencies
 import { WordsModule } from '../words/words.module';
+import { SentencesModule } from '../sentences/sentences.module';
+import { TrainingModule } from '../training/training.module';
+import { ConfigModule } from '../config/config.module';
 import { routing } from '../app.routing';
 
 // Vendor Libraries
@@ -24,6 +27,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     HttpModule,
     WordsModule,
+    SentencesModule,
+    TrainingModule,
+    ConfigModule,
     routing,
     NgbModule.forRoot(),
   ],
