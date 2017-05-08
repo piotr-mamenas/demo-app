@@ -14,6 +14,9 @@ import { NotFoundComponent } from './not-found.component';
 
 // Internal Modules
 import { WordsModule } from './words/words.module';
+import { SentencesModule } from './sentences/sentences.module';
+import { TrainingModule } from './training/training.module';
+import { ConfigModule } from './config/config.module';
 import { SharedModule } from './shared/shared.module';
 
 import { routing } from './app.routing';
@@ -33,6 +36,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     HttpModule,
     WordsModule,
+    SentencesModule,
+    TrainingModule,
+    ConfigModule,
     SharedModule,
     routing,
     NgbModule.forRoot()
