@@ -1,5 +1,6 @@
-<div class="words-detailview col-md-12">
-  Add Word
+<spinner *ngIf="isLoading" class="words-detailview col-md-12" [tickness]="3" [size]="60"></spinner>
+<div class="words-detailview col-md-12" [hidden]="isLoading">
+  {{ userAction }}
   <form (ngSubmit)="onSubmit(wordForm)" [formGroup]="wordForm" novalidate class="material fullscreen">
     <div class="form-group">
       <label for="english">English:</label>

@@ -14,8 +14,12 @@ export class WordsDetailViewComponent {
   @Output() onSubmitDetailView = new EventEmitter();
   model : Word = new Word(0,'','','');
 
+  userAction = 'Add Word';
+  isLoading = true;
+
   constructor(private fb: FormBuilder){
-    this.createForm();
+    this.createForm()
+    this.isLoading = false;
   }
 
   createForm() {

@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 // Vendor Libraries
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { SpinnerModule } from 'angular2-spinner';
 
 // Module Components
 import { WordsDetailViewComponent } from './words-detailview/words-detailview.component';
@@ -19,6 +20,7 @@ import { WordsListViewComponent } from './words-listview/words-listview.componen
     HttpModule,
     NgxDatatableModule,
     ReactiveFormsModule,
+    SpinnerModule,
     NgbModule.forRoot(),
   ],
   declarations: [
